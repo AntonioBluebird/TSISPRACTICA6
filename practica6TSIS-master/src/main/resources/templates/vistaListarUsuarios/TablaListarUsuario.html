@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Tutorial Spring boot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    
+</head>
+<body>
+
+    <table>
+    <thead>
+    <tr>
+     	<th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+       
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="usuario : ${usuario}">
+    	<td th:text="${usuario.idUsuario}"></td>
+    	<td th:text="${usuario.nombre}"></td>
+        <td th:text="${usuario.apellido}"></td>
+        
+        
+    </tr>
+    </tbody>
+</table>
+
+ </body>
+</html>
